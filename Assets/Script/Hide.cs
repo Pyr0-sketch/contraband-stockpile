@@ -11,6 +11,12 @@ public class Hide : MonoBehaviour
     public Color hiddenColor;
     public Color notHiddenColor;
     [SerializeField] private Animator animator;
+    audiomanager audiomanager;
+
+    private void Awake()
+    {
+        audiomanager = GameObject.FindGameObjectWithTag("audio").GetComponent<audiomanager>();
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +38,7 @@ public class Hide : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
+            audiomanager.PlaySFX(audiomanager.hide);
             particles.Play();
         }
     }

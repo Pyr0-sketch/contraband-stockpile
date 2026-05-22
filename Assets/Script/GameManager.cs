@@ -6,7 +6,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject WinScreen;
     [SerializeField] private GameObject LooseScreen;
     public ParticleSystem particles;
-
+    audiomanager audiomanager;
+    private void Awake()
+    {
+        audiomanager = GameObject.FindGameObjectWithTag("audio").GetComponent<audiomanager>();
+    }
 
 // Start is called once before the first execution of Update after the MonoBehaviour is created
     public TimerBehaviour timer;
@@ -21,12 +25,14 @@ public class GameManager : MonoBehaviour
         WinScreen.SetActive(true);
         Time.timeScale = 0f;
         particles.Play();
+        audiomanager.PlaySFX(audiomanager.winsound);
     }
 
     public void TriggerLooseState()
     {
         LooseScreen.SetActive(true);
         Time.timeScale = 0f;
+        audiomanager.PlaySFX(audiomanager.losesound);
     }
 
     public void GotoGame()
