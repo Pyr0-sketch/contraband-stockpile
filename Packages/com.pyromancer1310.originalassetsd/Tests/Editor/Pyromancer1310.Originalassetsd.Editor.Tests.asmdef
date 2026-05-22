@@ -1,0 +1,14 @@
+{
+    "name": "Pyromancer1310.Originalassetsd.Editor.Tests",
+    "references": [
+        "Pyromancer1310.Originalassetsd.Editor",
+        "Pyromancer1310.Originalassetsd"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

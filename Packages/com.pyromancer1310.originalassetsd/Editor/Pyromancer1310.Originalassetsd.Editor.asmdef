@@ -1,0 +1,10 @@
+{
+    "name": "Pyromancer1310.Originalassetsd.Editor",
+    "references": [
+      "Pyromancer1310.Originalassetsd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

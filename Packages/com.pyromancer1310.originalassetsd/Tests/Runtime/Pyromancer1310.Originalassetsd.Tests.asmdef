@@ -1,0 +1,11 @@
+{
+    "name": "Pyromancer1310.Originalassetsd.Tests",
+    "references": [
+        "Pyromancer1310.Originalassetsd"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
