@@ -15,6 +15,7 @@ public class TimerBehaviour : MonoBehaviour
     void Start()
     {
         remainingTime = maxTime;
+        
     }
 
     // Update is called once per frame

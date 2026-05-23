@@ -36,14 +36,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void GotoGame()
-    {
-      SceneManager.LoadScene("SampleScene");
-      Time.timeScale = 1f;
+    { 
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void Restart()
     {
         //Reloads current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("startscreen");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
